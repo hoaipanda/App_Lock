@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App_Lock</string>
+    <string name="key_on_or_off">key_on_or_off</string>
+    <string name="sumary_on_or_off">BẬT/ TẮT khóa ứng dụng mới</string>
+    <string name="key_title_on_off">Lock App New Installed</string>
+    <string name="key_other">Khác</string>
+    <string name="key_vote">key_vote</string>
+    <string name="key_summary_vote">Rate for app</string>
+</resources>

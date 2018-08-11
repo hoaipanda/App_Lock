@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddGroupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/mycolor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Add Group"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imSave"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:src="@drawable/save" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.comix.overwatch.HiveProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/load"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:hive_animDuration="5000"
+        app:hive_color="@color/colorAccent"
+        app:hive_cornerRadius="10"
+        app:hive_maxAlpha="200"
+        app:hive_rainbow="true"
+        app:hive_shrink="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAddGroup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="5dp" />
+</RelativeLayout>
